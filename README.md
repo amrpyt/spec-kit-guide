@@ -1,161 +1,171 @@
-# 📚 Spec-Kit Complete Guide - دليلك الشامل بالعربي
+# Spec-Kit Complete Guide
 
-> **دليل شامل ومبسط لاستخدام GitHub Spec-Kit مع إضافات مجتمعية قيّمة**
+> **Making GitHub Spec-Kit simple. Really simple.**
 
 [![Official Spec-Kit](https://img.shields.io/badge/Based%20on-github%2Fspec--kit-blue)](https://github.com/github/spec-kit)
 [![Forked](https://img.shields.io/badge/Fork-amrpyt%2Fspec--kit-green)](https://github.com/amrpyt/spec-kit)
-[![Arabic Guide](https://img.shields.io/badge/Language-العربية%20%2B%20English-orange)](./spec-kit-guide.md)
+[![Arabic Version](https://img.shields.io/badge/العربية-README--AR-orange)](./README-AR.md)
 
 ---
 
-## 🎯 ليه الدليل ده مهم؟
+## What's the problem?
 
-**GitHub Spec-Kit** أداة قوية جداً، لكن التوثيق الرسمي ممكن يكون معقد للمبتدئين. 
+You want to build software. The official Spec-Kit docs are good, but they're dense. You read them, you get confused, you make mistakes, you don't know what to do when things break.
 
-**الدليل ده بيقدم:**
+**This guide fixes that.**
 
-### ✨ المميزات الأساسية
+## What's in this guide?
 
-1. **🚀 Quick Start في 5 دقائق** - ابدأ فوراً بدون تعقيدات
-2. **📊 Visual Diagrams** - مخططات توضيحية لكل خطوة
-3. **💡 أمثلة عملية** - سيناريوهات حقيقية من مشاريع واقعية
-4. **🔧 Command Reference كامل** - شرح تفصيلي لكل أمر
+Think of it like this: the official docs are the textbook. This is your study guide with all the answers to the hard questions.
 
-### 🆕 الإضافة الأهم: Error Recovery Guide
+### The basics (but explained clearly)
+- **Quick Start** - 5 minutes, no confusion
+- **Visual diagrams** - See how everything connects
+- **Real examples** - Actual projects, not toy demos
+- **Every command explained** - What it does, when to use it, examples
 
-**هذا القسم غير موجود في التوثيق الرسمي!**
+### The part that doesn't exist anywhere else
 
-عندما تقابل error أثناء التطوير، الدليل بيوضح لك:
-- 🔍 **تحديد نوع الخطأ** - Build/Runtime/Test/Deployment
-- 🔄 **Workflow للتعافي** - خطوات منهجية لحل المشكلة
-- 📋 **5 سيناريوهات شائعة** مع الحلول التفصيلية
-- ✅ **Best Practices** للوقاية من الأخطاء
+**Error Recovery Guide** - This is the big one.
 
-#### مثال عملي من الدليل:
+Here's what happens in real life: You run `/speckit.implement`. Something breaks. Now what?
 
+The official docs don't tell you. This guide does:
+
+1. **What type of error is it?** (Build? Runtime? Test failure?)
+2. **What caused it?** (Bad spec? Bad plan? Bad code?)
+3. **Where do you go back to?** (Specific command to fix it)
+4. **How do you fix it?** (Step-by-step recovery)
+
+**5 common scenarios with solutions.** Copy-paste ready.
+
+Example:
 ```
-❌ المشكلة: Tests فشلت بعد Implementation
-
-✅ الحل:
-1. /speckit.analyze - تحليل المشكلة
-2. تحديد السبب (Spec خطأ؟ Implementation خطأ؟)
-3. الرجوع للخطوة المناسبة
-4. إعادة التنفيذ
+Problem: Tests fail after implementation
+→ Run /speckit.analyze
+→ Find the mismatch (spec vs code)
+→ Fix at the source
+→ Re-run from there
 ```
 
----
-
-## 📖 الدليل الكامل
-
-### [👉 اقرأ الدليل الكامل هنا: spec-kit-guide.md](./spec-kit-guide.md)
-
-**الدليل يحتوي على 1500+ سطر من الشرح التفصيلي!**
-
-#### 📚 المحتوى الأساسي
-- **TL;DR** - ابدأ في 5 دقائق
-- **Installation & Setup** - التثبيت خطوة بخطوة
-- **Complete Workflow** - الـ Workflow الكامل بالتفصيل
-- **Command Reference** - شرح كل أمر مع أمثلة
-- **Constitutional Governance** - المبادئ التسعة
-- **Cheatsheet** - مرجع سريع
-
-#### 🆕 الإضافات المجتمعية
-- **Error Recovery & Debugging Guide** - دليل شامل للتعامل مع الأخطاء
-  - Error Type Identification
-  - Recovery Workflows مع Diagrams
-  - 5 Common Scenarios بالحلول
-  - Prevention Best Practices
+Simple.
 
 ---
 
-## 🚀 Quick Start
+## Read the full guide
+
+### [→ spec-kit-guide.md](./spec-kit-guide.md)
+
+**1,500+ lines of clear explanations.**
+
+What's inside:
+- Installation (step by step)
+- Complete workflow (with diagrams)
+- Every command (with examples)
+- Constitutional Governance (the 9 principles)
+- **Error Recovery** (the unique part)
+- Cheatsheet (quick reference)
+
+---
+
+## Quick Start
 
 ```bash
-# 1. Install uv
+# Install uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# 2. Install Spec-Kit
+# Install Spec-Kit
 uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
 
-# 3. Initialize
+# Start
 cd your-project
 specify init --here
 
-# 4. Start building!
+# Build something
 /speckit.constitution
-/speckit.specify "Your feature description"
+/speckit.specify "Your feature"
 /speckit.plan
 /speckit.tasks
 /speckit.implement
 ```
 
-**لو قابلك error؟** شوف [Error Recovery Guide](./spec-kit-guide.md#error-recovery--debugging-guide) في الدليل!
+**Hit an error?** → [Error Recovery Guide](./spec-kit-guide.md#error-recovery--debugging-guide)
 
 ---
 
-## 🎓 مين يستخدم الدليل ده؟
+## Who is this for?
 
-### ✅ مناسب لـ:
-- **المبتدئين** - شرح مبسط وواضح
-- **المطورين المحترفين** - Error Recovery Workflows
-- **الفرق** - Best Practices و Constitutional Governance
-- **المتعلمين** - أمثلة عملية وسيناريوهات حقيقية
+**Beginners:** You'll understand what's happening and why.
 
-### 💪 هتتعلم:
-- كيف تستخدم Spec-Kit بكفاءة
-- كيف تتعامل مع الأخطاء بشكل منهجي
-- كيف تطبق Constitutional Governance
-- كيف تبني features بـ TDD
+**Experienced developers:** You'll fix errors faster with the recovery workflows.
+
+**Teams:** You'll have consistent practices with Constitutional Governance.
+
+**Anyone learning:** You'll see real examples, not abstract theory.
 
 ---
 
-## 🔗 الموارد
+## Why this guide exists
 
-### الريبو الأصلي
-- **Official Repository:** [github/spec-kit](https://github.com/github/spec-kit)
-- **Official README:** [Documentation](https://github.com/github/spec-kit/blob/main/README.md)
-- **Spec-Driven Development:** [Guide](https://github.com/github/spec-kit/blob/main/spec-driven.md)
+The official Spec-Kit is powerful. But power without clarity is frustrating.
 
-### Fork الخاص بينا
-- **Forked Repository:** [amrpyt/spec-kit](https://github.com/amrpyt/spec-kit)
-- مربوط بالريبو الأصلي ومتزامن معاه
+This guide gives you clarity:
+- **Official docs** = What the tool does
+- **This guide** = How to actually use it + what to do when it breaks
 
----
-
-## ⚠️ ملاحظة مهمة
-
-هذا الدليل **مجتمعي** ومبني على الريبو الرسمي [github/spec-kit](https://github.com/github/spec-kit).
-
-**الفرق الأساسي:**
-- ✅ **الريبو الرسمي** = الأداة نفسها + التوثيق الأساسي
-- ✅ **هذا الدليل** = شرح مبسط + Error Recovery + أمثلة عملية + إضافات مجتمعية
-
-**دايماً راجع الريبو الرسمي** للتحديثات والميزات الجديدة.
+Always check the [official repository](https://github.com/github/spec-kit) for updates. This guide complements it, doesn't replace it.
 
 ---
 
-## 🤝 المساهمة
+## The difference
 
-الدليل ده مفتوح للمساهمات! 
+**Official Spec-Kit:**
+- The tool itself
+- Core documentation
+- Technical reference
 
-- وجدت خطأ؟ افتح Issue
-- عندك إضافة؟ اعمل Pull Request
-- عايز تحسن شرح؟ ساهم معانا
+**This guide:**
+- Simplified explanations
+- Error recovery workflows (unique)
+- Real-world examples
+- Community additions
 
-شوف [CONTRIBUTING.md](./CONTRIBUTING.md) للتفاصيل.
+Both are needed. Use both.
 
 ---
 
-## 📄 الترخيص
+## Resources
 
-MIT License - متوافق مع الريبو الأصلي
+**Official:**
+- [github/spec-kit](https://github.com/github/spec-kit) - Main repository
+- [Official README](https://github.com/github/spec-kit/blob/main/README.md) - Core docs
+- [Spec-Driven Development](https://github.com/github/spec-kit/blob/main/spec-driven.md) - Philosophy
+
+**This project:**
+- [amrpyt/spec-kit](https://github.com/amrpyt/spec-kit) - Our fork (synced)
+- [spec-kit-guide.md](./spec-kit-guide.md) - Full guide (1,500+ lines)
+- [README-AR.md](./README-AR.md) - Arabic version
 
 ---
 
-<div align="center">
+## Contributing
 
-**🌟 لو الدليل ساعدك، متنساش تدي Star للريبو! 🌟**
+Found an error? Open an issue.
 
-**Made with ❤️ by the community | Based on [github/spec-kit](https://github.com/github/spec-kit)**
+Have a better explanation? Submit a pull request.
 
-</div>
+Want to add examples? We'll review it.
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
+
+---
+
+## License
+
+MIT License - Same as the original Spec-Kit project.
+
+---
+
+**If this guide helped you, give it a star. It helps others find it.**
+
+Made by the community | Based on [github/spec-kit](https://github.com/github/spec-kit)
