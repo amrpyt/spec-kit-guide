@@ -3,7 +3,8 @@
 > **دليل شامل ومبسط لاستخدام GitHub Spec-Kit مع إضافات مجتمعية قيّمة**
 
 [![Official Spec-Kit](https://img.shields.io/badge/Based%20on-github%2Fspec--kit-blue)](https://github.com/github/spec-kit)
-[![Arabic Guide](https://img.shields.io/badge/Language-العربية%20%2B%20English-green)](./spec-kit-guide.md)
+[![Forked](https://img.shields.io/badge/Fork-amrpyt%2Fspec--kit-green)](https://github.com/amrpyt/spec-kit)
+[![Arabic Guide](https://img.shields.io/badge/Language-العربية%20%2B%20English-orange)](./spec-kit-guide.md)
 
 ---
 
@@ -48,7 +49,7 @@
 
 ### [👉 اقرأ الدليل الكامل هنا: spec-kit-guide.md](./spec-kit-guide.md)
 
-الدليل يحتوي على:
+**الدليل يحتوي على 1500+ سطر من الشرح التفصيلي!**
 
 #### 📚 المحتوى الأساسي
 - **TL;DR** - ابدأ في 5 دقائق
@@ -108,11 +109,16 @@ specify init --here
 
 ---
 
-## 🔗 الموارد الرسمية
+## 🔗 الموارد
 
-- **الريبو الرسمي:** [github/spec-kit](https://github.com/github/spec-kit)
-- **التوثيق الرسمي:** [Official README](https://github.com/github/spec-kit/blob/main/README.md)
-- **Spec-Driven Development:** [Official Guide](https://github.com/github/spec-kit/blob/main/spec-driven.md)
+### الريبو الأصلي
+- **Official Repository:** [github/spec-kit](https://github.com/github/spec-kit)
+- **Official README:** [Documentation](https://github.com/github/spec-kit/blob/main/README.md)
+- **Spec-Driven Development:** [Guide](https://github.com/github/spec-kit/blob/main/spec-driven.md)
+
+### Fork الخاص بينا
+- **Forked Repository:** [amrpyt/spec-kit](https://github.com/amrpyt/spec-kit)
+- مربوط بالريبو الأصلي ومتزامن معاه
 
 ---
 
