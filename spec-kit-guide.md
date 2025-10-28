@@ -162,15 +162,17 @@ constitution → specify → plan → tasks → implement
 
 ---
 
-### 🚀 Integration with Existing Projects
+### 🚀 Integration with Existing Projects (Brownfield)
 
-**Already have a project?** No problem!
+**Already have a project?** No problem! Spec-Kit works perfectly with existing codebases.
+
+#### Quick Setup for Existing Projects
 
 ```bash
 # Navigate to your existing project
 cd existing-project
 
-# Initialize Spec-Kit
+# Initialize Spec-Kit (won't touch existing code)
 specify init --here
 
 # Your existing code stays untouched
@@ -182,6 +184,137 @@ specify init --here
 # Start building new features with Spec-Kit
 /speckit.specify "Your next feature"
 ```
+
+#### Brownfield Best Practices
+
+**1. Start with Constitution**
+```bash
+/speckit.constitution
+```
+Document your **existing** architecture principles:
+- Current tech stack
+- Existing patterns and conventions
+- Code style guidelines
+- Testing approaches already in use
+
+**2. Use for New Features Only (Initially)**
+- Don't try to spec existing code immediately
+- Use Spec-Kit for **new features** first
+- Build confidence with the workflow
+- Gradually adopt for refactoring
+
+**3. Incremental Adoption Strategy**
+
+```
+Phase 1: New Features
+├── Use /speckit.specify for new features
+├── Keep existing code as-is
+└── Learn the workflow
+
+Phase 2: Major Changes
+├── Use Spec-Kit for significant refactors
+├── Document changes with specs
+└── Maintain consistency
+
+Phase 3: Full Integration
+├── Create specs for critical existing features (documentation)
+├── Use for all new work
+└── Reference specs in code reviews
+```
+
+**4. Working with Existing Architecture**
+
+When planning new features in existing projects:
+
+```bash
+/speckit.plan
+
+# In your prompt, mention:
+# "This project uses:
+# - Express.js with existing middleware
+# - PostgreSQL with Sequelize ORM (already configured)
+# - Jest for testing (existing test setup)
+# - Current folder structure: src/routes/, src/models/, src/services/
+# 
+# New feature should follow these existing patterns."
+```
+
+**5. Handling Legacy Code**
+
+```bash
+# Scenario: Adding feature to legacy codebase
+
+/speckit.specify "Add user notifications to existing user management system"
+
+# In clarifications, mention:
+# - Existing User model structure
+# - Current authentication system
+# - Database schema constraints
+# - API versioning approach
+
+/speckit.plan
+# AI will integrate with existing patterns
+
+/speckit.tasks
+# Tasks will respect existing structure
+
+/speckit.implement
+# Implementation follows existing conventions
+```
+
+#### Common Brownfield Scenarios
+
+**Scenario 1: Existing Monolith**
+```bash
+# You have: Large monolithic app
+# You want: Add new feature module
+
+/speckit.constitution
+# Document: Monolith structure, shared dependencies, deployment process
+
+/speckit.specify "Add payment processing module"
+# Mention: Existing user system, database, API structure
+
+# Result: New module that integrates cleanly
+```
+
+**Scenario 2: Microservices**
+```bash
+# You have: Multiple services
+# You want: Add new service
+
+/speckit.constitution
+# Document: Service communication patterns, shared libraries, deployment
+
+/speckit.specify "Create notification service"
+# Mention: Existing message queue, service discovery, auth service
+
+# Result: New service following established patterns
+```
+
+**Scenario 3: Legacy Refactoring**
+```bash
+# You have: Old code needing refactor
+# You want: Modernize one module
+
+/speckit.specify "Refactor authentication module to use JWT"
+# Document: Current auth flow, breaking changes, migration path
+
+/speckit.plan
+# Include: Backward compatibility, gradual rollout, rollback plan
+
+# Result: Spec-driven refactoring with clear plan
+```
+
+#### Integration Checklist
+
+- [ ] Run `specify init --here` in project root
+- [ ] Create constitution documenting existing patterns
+- [ ] Add `.specify/` to `.gitignore` if needed (optional)
+- [ ] Start with one small new feature
+- [ ] Review generated code for consistency
+- [ ] Adjust constitution based on learnings
+- [ ] Gradually expand usage
 
 **Spec-Kit works alongside your existing code.** Use it for new features while keeping your current codebase intact.
 
