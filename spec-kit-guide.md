@@ -141,6 +141,7 @@ constitution → specify → plan → tasks → implement
 **Optional Commands:**
 6. **`/speckit.clarify`** - Resolve ambiguities in spec
 7. **`/speckit.analyze`** - Validate before implementing
+8. **`/speckit.checklist`** - Generate custom quality checklists
 
 ---
 
@@ -998,6 +999,50 @@ AI: Validating prerequisites...
 
 ---
 
+### 8. `/speckit.checklist` (Optional)
+
+**Purpose:** Generate custom quality checklists to validate requirements completeness, clarity, and consistency.
+
+**When to Use:**
+- After specification is written
+- Before or during planning
+- To ensure spec quality
+
+**What It Does:**
+- Analyzes current spec.md
+- Generates targeted validation questions
+- Creates checklist for requirements review
+- Acts like "unit tests for English"
+
+**Example:**
+```
+User: /speckit.checklist
+
+AI: Generating quality checklist for your specification...
+    
+    ✅ Requirements Completeness Checklist:
+    
+    1. [ ] Are all user roles clearly defined?
+    2. [ ] Are success criteria measurable?
+    3. [ ] Are error scenarios documented?
+    4. [ ] Are performance requirements specified?
+    5. [ ] Are security requirements addressed?
+    6. [ ] Are accessibility needs considered?
+    7. [ ] Are integration points identified?
+    8. [ ] Are data validation rules clear?
+    
+    Review each item and update spec.md accordingly.
+```
+
+**Output:**
+- Custom checklist based on your spec
+- Validation questions
+- Quality gates for requirements
+
+**Note:** Added in version 0.0.18
+
+---
+
 ## Constitutional Governance
 
 ### The Nine Articles of Development
@@ -1200,6 +1245,7 @@ specify check
 | `/speckit.constitution` | Define principles | `memory/constitution.md` |
 | `/speckit.specify` | Write spec | `specs/NNN-feature/spec.md` |
 | `/speckit.clarify` | Resolve ambiguities | Updated `spec.md` |
+| `/speckit.checklist` | Generate quality checklist | Custom validation checklist |
 | `/speckit.plan` | Create tech plan | `plan.md`, `research.md`, etc. |
 | `/speckit.analyze` | Validate artifacts | Analysis report |
 | `/speckit.tasks` | Generate tasks | `tasks.md` |
