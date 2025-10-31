@@ -5,10 +5,10 @@
 ### Making GitHub Spec-Kit simple. Really simple.
 
 [![Official Spec-Kit](https://img.shields.io/badge/Based%20on-github%2Fspec--kit-blue?style=for-the-badge)](https://github.com/github/spec-kit)
-[![Forked](https://img.shields.io/badge/Fork-amrpyt%2Fspec--kit-green?style=for-the-badge)](https://github.com/amrpyt/spec-kit)
+[![Forked](https://img.shields.io/badge/Documentation-amrpyt%2Fspec--kit-guide-green?style=for-the-badge)](https://github.com/amrpyt/spec-kit-guide)
 [![Arabic Version](https://img.shields.io/badge/العربية-README--AR-orange?style=for-the-badge)](./README-AR.md)
 
-**[📖 Read Full Guide](./spec-kit-guide.md)** • **[🐛 Error Recovery](./spec-kit-guide.md#error-recovery--debugging-guide)** • **[⚡ Quick Start](#-quick-start)**
+**[📖 Quick Guide](./spec-kit-quick-guide.md)** • **[📚 Comprehensive Guide](./spec-kit-comprehensive-guide.md)** • **[🐛 Error Recovery](./spec-kit-comprehensive-guide.md#error-recovery--debugging)**
 
 </div>
 
@@ -87,34 +87,47 @@ Simple. Clear. Done.
 
 ---
 
-## 📖 Full Guide Contents
+## 📖 Guide Structure
 
-### **[→ Read the Complete Guide: spec-kit-guide.md](./spec-kit-guide.md)**
+### **📚 Documentation Files**
+
+| Guide | Purpose | Size | Audience |
+|-------|---------|------|----------|
+| **[📖 Quick Guide](./spec-kit-quick-guide.md)** | Get started in minutes with visual workflows | ⚡ **Fast** | Beginners, Rapid start |
+| **[📚 Comprehensive Guide](./spec-kit-comprehensive-guide.md)** | Complete technical reference with all details | 🔍 **Deep** | Advanced users, Teams |
 
 <details>
-<summary><b>📚 Core Documentation (Click to expand)</b></summary>
+<summary><b>📖 Quick Guide Contents (Click to expand)</b></summary>
 
-- **TL;DR** - Start in 5 minutes
-- **Installation & Setup** - Step-by-step guide
-- **Complete Workflow** - With visual diagrams
-- **Command Reference** - Every command explained
-- **Constitutional Governance** - The 9 principles
-- **Cheatsheet** - Quick reference
+- **5-Minute Quick Start** - Install and build your first feature
+- **Visual Workflows** - Mermaid diagrams for every process
+- **Core Commands** - What each command does and when to use it
+- **Brownfield Integration** - Easy steps for existing projects
+- **Checklist Usage** - When and how to use quality checklists
+- **Error Recovery** - What to do when things break
+- **Common Scenarios** - Real-world examples and patterns
+- **Quick Reference** - Cheat sheets and file locations
 
 </details>
 
 <details>
-<summary><b>🆕 Community Additions (Click to expand)</b></summary>
+<summary><b>📚 Comprehensive Guide Contents (Click to expand)</b></summary>
 
-- **Error Recovery & Debugging Guide** ⭐
-  - Error Type Identification
-  - Recovery Workflows with Diagrams
-  - 5 Common Scenarios with Solutions
-  - Prevention Best Practices
+- **System Architecture** - Detailed technical architecture
+- **Advanced Installation** - All configuration options
+- **Command Deep Dive** - Exhaustive command documentation
+- **Brownfield Project Integration** - Complete integration strategies
+- **Constitutional Governance** - Nine Articles framework
+- **Advanced Workflow Patterns** - Multi-feature, iterative development
+- **Template Customization** - Create your own templates
+- **Error Recovery & Debugging** - Systematic troubleshooting
+- **Multi-Agent Strategies** - Using different AI agents effectively
+- **CI/CD Integration** - Pipeline automation and quality gates
+- **Performance & Optimization** - Making Spec-Kit faster
+- **Troubleshooting Reference** - Complete error reference
+- **Best Practices & Patterns** - Team collaboration patterns
 
 </details>
-
-**1,500+ lines of clear explanations.**
 
 ---
 
@@ -213,8 +226,9 @@ Always check the [official repository](https://github.com/github/spec-kit) for u
 - **[Spec-Driven Development](https://github.com/github/spec-kit/blob/main/spec-driven.md)** - Philosophy
 
 ### 📗 This Project
-- **[amrpyt/spec-kit](https://github.com/amrpyt/spec-kit)** - Our fork (synced)
-- **[spec-kit-guide.md](./spec-kit-guide.md)** - Full guide (1,500+ lines)
+- **[amrpyt/spec-kit-guide](https://github.com/amrpyt/spec-kit-guide)** - Documentation repository
+- **[📖 Quick Guide](./spec-kit-quick-guide.md)** - Get started in minutes
+- **[📚 Comprehensive Guide](./spec-kit-comprehensive-guide.md)** - Complete technical reference
 - **[README-AR.md](./README-AR.md)** - Arabic version (Al-Hariri style)
 
 ---
@@ -268,6 +282,6 @@ Based on **[github/spec-kit](https://github.com/github/spec-kit)**
 
 ---
 
-**[📖 Read Full Guide](./spec-kit-guide.md)** • **[🐛 Error Recovery](./spec-kit-guide.md#error-recovery--debugging-guide)** • **[🇸🇦 النسخة العربية](./README-AR.md)**
+**[📖 Quick Guide](./spec-kit-quick-guide.md)** • **[📚 Comprehensive Guide](./spec-kit-comprehensive-guide.md)** • **[🇸🇦 النسخة العربية](./README-AR.md)**
 
 </div>
